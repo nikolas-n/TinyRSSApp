@@ -348,7 +348,7 @@ public class ArticleActivity extends TinyRSSReaderActivity {
 				return false;
 			}
 		});
-		webView.getSettings().setLayoutAlgorithm(LayoutAlgorithm.SINGLE_COLUMN);
+		webView.getSettings().setLayoutAlgorithm(LayoutAlgorithm.TEXT_AUTOSIZING);
 		webView.getSettings().setJavaScriptEnabled(true);
 		webView.loadUrl(BLANK_PAGE);
 		injectHtml();
