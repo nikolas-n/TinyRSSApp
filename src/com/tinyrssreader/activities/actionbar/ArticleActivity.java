@@ -369,7 +369,7 @@ public class ArticleActivity extends TinyRSSReaderActivity {
 				new String[] { getCurrentArticle().link,
 						TextUtils.htmlEncode(getCurrentArticle().title) })
 				.toString();
-		content = "<html><head>"
+		content = "<html><head><style>img{max-width: 100%; width:auto; height: auto;}</style>"
 				+ "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no, minimal-ui\">"
 				+ getString(R.string.tpl_article_style) + "</head><body "
 				+ (hasDarkTheme ? "class='dark'" : "")
