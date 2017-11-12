@@ -8,9 +8,11 @@ buildscript {
 }
 
 allprojects {
-    repositories {
-        mavenCentral()
-    }
+    repositories { maven {
+            url "https://maven.google.com"
+        }
+
+}
 }
 
 apply plugin: 'android'
@@ -22,6 +24,9 @@ dependencies {
 }
 
 android {
+    lintOptions {
+          abortOnError false
+      }
     defaultConfig {
         versionCode 7
         versionName "1.6"

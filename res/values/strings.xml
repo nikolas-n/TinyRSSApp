@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Tiny RSS Reader</string>
+    <string name="app_name">TinyRSSReader</string>
     <string name="categories_title">Categories</string>
-    <string name="feeds_title">Feeds</string>
+    <string name="feeds_title">FeedsDebug</string>
     <string name="logout_action_msg">Logout</string>
     <string name="show_all_msg">Show all</string>
     <string name="show_unread_msg">Show unread only</string>
