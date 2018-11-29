@@ -1,9 +1,10 @@
 buildscript {
     repositories {
         mavenCentral()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0'
+        classpath 'com.android.tools.build:gradle:3.2.1'
     }
 }
 
@@ -11,16 +12,17 @@ allprojects {
     repositories { maven {
             url "https://maven.google.com"
         }
+        google()
 
-}
+    }
 }
 
 apply plugin: 'android'
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:22.2.1'
+    implementation 'com.android.support:appcompat-v7:22.2.1'
 
-    compile fileTree(include: '*.jar', dir: 'libs')
+    implementation fileTree(include: '*.jar', dir: 'libs')
 }
 
 android {
@@ -33,8 +35,10 @@ android {
         minSdkVersion 8
     }
 
-    compileSdkVersion 21
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 26
+    buildToolsVersion "28.0.3"
+
+    useLibrary  'org.apache.http.legacy'
 
     buildTypes {
         release {
@@ -54,7 +58,7 @@ android {
         }
 
         // Move the tests to tests/java, tests/res, etc...
-        instrumentTest.setRoot('tests')
+        //instrumentTest.setRoot('tests')
 
         // Move the build types to build-types/<type>
         // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
