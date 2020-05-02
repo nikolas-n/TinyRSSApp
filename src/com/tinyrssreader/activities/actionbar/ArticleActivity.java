@@ -350,6 +350,7 @@ public class ArticleActivity extends TinyRSSReaderActivity {
 		});
 		webView.getSettings().setLayoutAlgorithm(LayoutAlgorithm.TEXT_AUTOSIZING);
 		webView.getSettings().setJavaScriptEnabled(true);
+		webView.getSettings().setBuiltInZoomControls(true);
 		webView.loadUrl(BLANK_PAGE);
 		injectHtml();
 		// use loadDataWithBaseURL as workaround for webview bug:
