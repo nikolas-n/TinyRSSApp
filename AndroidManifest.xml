@@ -8,10 +8,11 @@
 
     <application
         android:allowBackup="false"
+        android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/feeds_title"
         android:theme="@style/CustomLightTheme"
-        android:uiOptions="splitActionBarWhenNarrow" >
+        android:uiOptions="splitActionBarWhenNarrow">
         <meta-data
             android:name="android.support.UI_OPTIONS"
             android:value="splitActionBarWhenNarrow" />
